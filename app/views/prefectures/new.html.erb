@@ -1,0 +1,17 @@
+<h1>Prefectures#new</h1>
+<p>Find me in app/views/prefectures/new.html.erb</p>
+
+
+
+<%=flash[:success]%>
+<%=flash[:error]%>
+
+<%= form_for @prefecture do |f|%>
+
+
+<%= f.text_field :pref_name%>
+
+<%= f.hidden_field :person_id, value: 1%>
+
+<%= f.submit%>
+<%end%>

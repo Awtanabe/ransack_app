@@ -1,0 +1,18 @@
+index
+
+
+<%= search_form_for @q, url: persons_path do |f| %>
+ <%= f.label :name_cont %>
+  <%= f.search_field :name_cont %>
+
+  <%= f.search_field :prefectures_pref_name_cont%>
+
+ <%= f.submit %>
+<%end%>
+
+
+<% @persons.each do |p|%>
+
+ <%= @persons.count%>
+ <%= p.name%>
+<%end%>
